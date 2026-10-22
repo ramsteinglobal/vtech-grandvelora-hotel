@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Grand Velora — Luxury Heritage Hotel & Sanctuary</title>
+  <meta name="description" content="Experience the timeless serenity of The Grand Velora. Sixty-two handcrafted rooms, restorative Ayurvedic wellness, and candlelit courtyard dining in Jaipur.">
+  <meta name="theme-color" content="#0E0B08">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Grand Velora — Luxury Heritage Hotel">
+  <meta property="og:description" content="Sixty-two rooms. One quiet idea: that time should slow down here.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Favicon Monogram -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230E0B08'/%3E%3Cpath d='M7 9 L16 24 L25 9' fill='none' stroke='%23C9A25B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" type="image/svg+xml">
+
+  <!-- Preconnect to CDNs & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/transition.css">
+
+  <!-- JSON-LD Hotel Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "The Grand Velora",
+    "description": "Bespoke luxury heritage hotel featuring 62 private residences, Ayurvedic sanctuary, and courtyard dining.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Velora Palace Road, Amber Foothills",
+      "addressLocality": "Jaipur",
+      "addressRegion": "Rajasthan",
+      "postalCode": "302001",
+      "addressCountry": "IN"
+    },
+    "telephone": "+91-9555882573",
+    "email": "vaibhav.isti@gmail.com",
+    "priceRange": "₹12,500 - ₹65,000",
+    "starRating": {
+      "@type": "Rating",
+      "ratingValue": "5"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main sanctuary content</a>
+
+  <!-- Atmospheric Film Grain & Scroll Progress -->
+  <div class="film-grain" aria-hidden="true"></div>
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Shared Page Transition Overlay -->
+  <div id="page-transition-overlay" aria-hidden="true">
+    <div class="transition-brand">
+      <div class="transition-monogram-circle">
+        <svg class="transition-v-svg" viewBox="0 0 32 32" aria-hidden="true">
+          <path class="transition-svg-stroke" d="M7 8 L16 25 L25 8" />
+        </svg>
+      </div>
+      <div class="transition-brand-title">The Grand Velora</div>
+      <div class="transition-brand-subtitle">Est. 1962 / Jaipur</div>
+      <div class="transition-line"></div>
+    </div>
+  </div>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="site-logo" aria-label="The Grand Velora — Return to Home">
+        <div class="logo-monogram-box">
+          <svg class="logo-v-svg" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M7 8 L16 24 L25 8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">The Grand Velora</span>
+          <span class="logo-subtitle">Palace & Sanctuary</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="rooms.html" class="nav-link">Rooms</a>
+        <a href="amenities.html" class="nav-link">Amenities</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-primary btn-book-nav btn-magnetic">Reserve</a>
+        <button class="menu-toggle" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-overlay" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="rooms.html" class="mobile-nav-link">Rooms & Suites</a>
+      <a href="amenities.html" class="mobile-nav-link">Amenities</a>
+      <a href="booking.html" class="mobile-nav-link">Booking Inquiry</a>
+      <a href="about.html" class="mobile-nav-link">Our Story</a>
+      <a href="contact.html" class="mobile-nav-link">Contact & Location</a>
+    </nav>
+    <div class="mobile-contact-bar">
+      <span>Reservations: <a href="tel:9555882573">+91 9555882573</a></span>
+      <span>Concierge: <a href="mailto:vaibhav.isti@gmail.com">vaibhav.isti@gmail.com</a></span>
+    </div>
+  </div>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content" class="site-main">
+
+    <!-- 1. CINEMATIC HERO SECTION (100vh) -->
+    <section class="hero-section" aria-label="Welcome Hero">
+      <div class="hero-media-wrapper">
+        <img 
+          src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2000&q=85" 
+          alt="The Grand Velora palatial water courtyard at twilight" 
+          class="hero-bg-media"
+          width="2000"
+          height="1333"
+        >
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <span class="eyebrow hero-eyebrow">Est. 1962 / Jaipur</span>
+        <h1 class="hero-title hero-headline-split">Where Heritage Whispers to the Quiet Mind</h1>
+        <p class="hero-subtext">Sixty-two rooms. One quiet idea: that time should slow down here.</p>
+        
+        <div class="hero-actions">
+          <a href="booking.html" class="btn btn-primary btn-magnetic">Reserve Your Stay</a>
+          <a href="rooms.html" class="btn btn-ghost">Explore Rooms</a>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span>Discover</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Glass Quick Booking Bar (Overlaps Hero Bottom) -->
+    <div class="hero-booking-bar-wrapper">
+      <div class="container">
+        <form id="hero-quick-booking-bar" class="hero-booking-bar" role="search" aria-label="Quick Room Availability Check">
+          <div class="form-group">
+            <label for="quick-checkin" class="form-label">Check-in</label>
+            <input type="date" id="quick-checkin" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="quick-checkout" class="form-label">Check-out</label>
+            <input type="date" id="quick-checkout" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="quick-guests" class="form-label">Guests</label>
+            <select id="quick-guests" class="form-select">
+              <option value="1">1 Guest</option>
+              <option value="2" selected>2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+            </select>
+          </div>
+          <div>
+            <button type="submit" id="quick-submit-btn" class="btn btn-primary btn-magnetic" style="width: 100%;">
+              Check Availability
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- 2. ASYMMETRICAL INTRO / STORY STRIP -->
+    <section class="section-spacing" aria-label="Sanctuary Narrative">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-text-col reveal-up">
+            <span class="eyebrow">The Philosophy</span>
+            <blockquote class="intro-pull-quote">
+              "True luxury is not ornament. It is the absence of noise, the scent of jasmine carried on evening air, and stone that remembers the sun."
+            </blockquote>
+            <p class="intro-body-copy">
+              Carved from amber sandstone in 1962 and tenderly preserved across three generations, The Grand Velora stands as an intimate retreat away from the cadence of the modern world. Here, quiet mornings begin with birdsong over the lily pool, and twilights settle under hand-cast bronze lanterns.
+            </p>
+            <a href="about.html" class="btn-underline">
+              <span>Read Our Heritage Story</span>
+              <svg class="btn-arrow-icon" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+
+          <div class="intro-media-offset reveal-up" data-speed="0.08">
+            <img 
+              src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=85" 
+              alt="Arched heritage colonnade in warm sunlight" 
+              class="intro-image-main" 
+              loading="lazy"
+              width="1200"
+              height="1500"
+            >
+            <div class="intro-badge-tucked">
+              <span class="intro-badge-year">1962</span>
+              <p class="intro-badge-label">The Original Residence</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><hr class="hairline-gold"></div>
+
+    <!-- 3. FEATURED ROOMS STRIP -->
+    <section class="section-spacing" aria-label="Featured Accommodations">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 48px; flex-wrap: wrap; gap: 20px;">
+          <div>
+            <span class="eyebrow">Accommodations</span>
+            <h2>Residences of Quiet Splendor</h2>
+          </div>
+          <a href="rooms.html" class="btn-underline">
+            <span>Discover All 5 Accommodations</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="reveal-stagger-parent" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px;">
+          <!-- Deluxe Room -->
+          <article class="room-card reveal-child">
+            <div class="room-card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=85" 
+                alt="Deluxe Room king bed framed in teakwood" 
+                class="room-card-image"
+                loading="lazy"
+                width="1000"
+                height="625"
+              >
+              <span class="glass-pill room-card-badge">01 &bull; Room</span>
+            </div>
+            <div class="room-card-content">
+              <div class="room-card-header">
+                <h3 class="room-card-title">Deluxe Room</h3>
+                <div class="room-card-price-block">
+                  <span class="price-prefix">From</span>
+                  <span class="room-card-price">₹12,500</span>
+                  <span class="price-unit">/ night</span>
+                </div>
+              </div>
+              <p class="room-card-desc">An intimate sanctuary framed in oiled teakwood, custom brass reading lamps, and courtyard vistas.</p>
+              
+              <div class="room-specs-strip">
+                <div class="room-spec-item">
+                  <svg class="room-spec-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+                  <span>520 sq ft</span>
+                </div>
+                <div class="room-spec-item">
+                  <svg class="room-spec-icon" viewBox="0 0 24 24"><path d="M2 19h20M4 19V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/></svg>
+                  <span>King Bed</span>
+                </div>
+                <div class="room-spec-item">
+                  <svg class="room-spec-icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  <span>2 Guests</span>
+                </div>
+              </div>
+
+              <div class="room-tags-row">
+                <span class="room-tag">Private Veranda</span>
+                <span class="room-tag">Rain Shower</span>
+                <span class="room-tag">Artisanal Bar</span>
+              </div>
+
+              <div class="room-card-footer">
+                <a href="booking.html?room=deluxe-room" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.75rem;">Book Now</a>
+                <a href="rooms.html" class="btn-underline" style="font-size: 0.75rem;">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Velora Suite -->
+          <article class="room-card reveal-child">
+            <div class="room-card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1000&q=85" 
+                alt="Velora Suite opulent living salon with warm lighting" 
+                class="room-card-image"
+                loading="lazy"
+                width="1000"
+                height="625"
+              >
+              <span class="glass-pill room-card-badge">02 &bull; Suite</span>
+            </div>
+            <div class="room-card-content">
+              <div class="room-card-header">
+                <h3 class="room-card-title">Velora Suite</h3>
+                <div class="room-card-price-block">
+                  <span class="price-prefix">From</span>
+                  <span class="room-card-price">₹24,000</span>
+                  <span class="price-unit">/ night</span>
+                </div>
+              </div>
+              <p class="room-card-desc">An expansive residence with separate living salon, raw silk textures, and dedicated butler pantry.</p>
+              
+              <div class="room-specs-strip">
+                <div class="room-spec-item">
+                  <svg class="room-spec-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+                  <span>980 sq ft</span>
+                </div>
+                <div class="room-spec-item">
+                  <svg class="room-spec-icon" viewBox="0 0 24 24"><path d="M2 19h20M4 19V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/></svg>
+                  <span>King Bed</span>
+                </div>
+                <div class="room-spec-item">
+                  <svg class="room-spec-icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  <span>3 Guests</span>
+                </div>
+              </div>
+
+              <div class="room-tags-row">
+                <span class="room-tag">Living Salon</span>
+                <span class="room-tag">Butler Service</span>
+                <span class="room-tag">Dressing Room</span>
+              </div>
+
+              <div class="room-card-footer">
+                <a href="booking.html?room=velora-suite" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.75rem;">Book Now</a>
+                <a href="rooms.html" class="btn-underline" style="font-size: 0.75rem;">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Royal Suite -->
+          <article class="room-card reveal-child">
+            <div class="room-card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1000&q=85" 
+                alt="Royal Suite carved heritage archways and soaking bath" 
+                class="room-card-image"
+                loading="lazy"
+                width="1000"
+                height="625"
+              >
+              <span class="glass-pill room-card-badge">03 &bull; Heritage</span>
+            </div>
+            <div class="room-card-content">
+              <div class="room-card-header">
+                <h3 class="room-card-title">Royal Suite</h3>
+                <div class="room-card-price-block">
+                  <span class="price-prefix">From</span>
+                  <span class="room-card-price">₹38,000</span>
+                  <span class="price-unit">/ night</span>
+                </div>
+              </div>
+              <p class="room-card-desc">Double-height plaster ceilings, restored fireplace, and an exclusive private outdoor plunge pool.</p>
+              
+              <div class="room-specs-strip">
+                <div class="room-spec-item">
+                  <svg class="room-spec-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+                  <span>1,450 sq ft</span>
+                </div>
+                <div class="room-spec-item">
+                  <svg class="room-spec-icon" viewBox="0 0 24 24"><path d="M2 19h20M4 19V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/></svg>
+                  <span>Palatial King</span>
+                </div>
+                <div class="room-spec-item">
+                  <svg class="room-spec-icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  <span>4 Guests</span>
+                </div>
+              </div>
+
+              <div class="room-tags-row">
+                <span class="room-tag">Plunge Pool</span>
+                <span class="room-tag">Private Dining</span>
+                <span class="room-tag">Balcony View</span>
+              </div>
+
+              <div class="room-card-footer">
+                <a href="booking.html?room=royal-suite" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.75rem;">Book Now</a>
+                <a href="rooms.html" class="btn-underline" style="font-size: 0.75rem;">View Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ASYMMETRICAL AMENITIES PREVIEW -->
+    <section class="section-spacing" aria-label="Amenities Preview">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 48px; flex-wrap: wrap; gap: 20px;">
+          <div>
+            <span class="eyebrow">The Estate Offerings</span>
+            <h2>Moments of Stillness & Taste</h2>
+          </div>
+          <a href="amenities.html" class="btn-underline">
+            <span>View All Amenities</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="amenities-preview-grid">
+          <!-- Pool: Large Featured Card -->
+          <a href="amenities.html#pool" class="amenity-preview-card tall reveal-up">
+            <img 
+              src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85" 
+              alt="The Azure Cistern reflection pool framed by stone arches" 
+              class="amenity-preview-img"
+              loading="lazy"
+              width="1200"
+              height="1500"
+            >
+            <div class="amenity-preview-gradient"></div>
+            <div class="amenity-preview-glass-info">
+              <div>
+                <h3 class="amenity-preview-title">The Azure Cistern</h3>
+                <p class="amenity-preview-subtitle">Subterranean stone pool with floating oil lamps</p>
+              </div>
+              <span class="roman-numeral">01</span>
+            </div>
+          </a>
+
+          <!-- Right Column: Spa & Dining Stack -->
+          <div style="display: flex; flex-direction: column; gap: 24px;">
+            <a href="amenities.html#spa" class="amenity-preview-card reveal-up">
+              <img 
+                src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1000&q=85" 
+                alt="Soma Ayurvedic Spa sanctuary oils and warm stone" 
+                class="amenity-preview-img"
+                loading="lazy"
+                width="1000"
+                height="625"
+              >
+              <div class="amenity-preview-gradient"></div>
+              <div class="amenity-preview-glass-info">
+                <div>
+                  <h3 class="amenity-preview-title">Soma Sanctuary</h3>
+                  <p class="amenity-preview-subtitle">Herbal oils & ancient Ayurvedic restoration</p>
+                </div>
+                <span class="roman-numeral">02</span>
+              </div>
+            </a>
+
+            <a href="amenities.html#dining" class="amenity-preview-card reveal-up">
+              <img 
+                src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1000&q=85" 
+                alt="Aura Fine Dining candlelit tables and wine cellar" 
+                class="amenity-preview-img"
+                loading="lazy"
+                width="1000"
+                height="625"
+              >
+              <div class="amenity-preview-gradient"></div>
+              <div class="amenity-preview-glass-info">
+                <div>
+                  <h3 class="amenity-preview-title">Aura Fine Dining</h3>
+                  <p class="amenity-preview-subtitle">Intimate courtyard tables and vintage cellar</p>
+                </div>
+                <span class="roman-numeral">03</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. NUMBERS STRIP WITH COUNT-UP -->
+    <section class="container" aria-label="Estate Statistics">
+      <div class="stats-strip reveal-up">
+        <div class="stat-item">
+          <div class="stat-num-row">
+            <span class="stat-number" data-target="62">0</span>
+          </div>
+          <span class="stat-label">Bespoke Rooms</span>
+          <p class="stat-desc">Intimate capacity ensuring absolute privacy for every guest.</p>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-num-row">
+            <span class="stat-number" data-target="4">0</span>
+          </div>
+          <span class="stat-label">Culinary Venues</span>
+          <p class="stat-desc">From candlelit courtyard dining to sunset rooftop tea service.</p>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-num-row">
+            <span class="stat-number" data-target="24">0</span>
+            <span class="stat-plus">/7</span>
+          </div>
+          <span class="stat-label">Private Concierge</span>
+          <p class="stat-desc">Dedicated palace liaisons curating bespoke Rajasthan journeys.</p>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-num-row">
+            <span class="stat-number" data-target="64">0</span>
+          </div>
+          <span class="stat-label">Years of Heritage</span>
+          <p class="stat-desc">Welcoming discerning travelers with quiet grace since 1962.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CALM TESTIMONIAL SLIDER -->
+    <section class="section-spacing" aria-label="Guest Words">
+      <div class="container">
+        <div class="testimonial-wrapper reveal-up">
+          <svg class="quote-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2H4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2 0 4-1.5 6-3 8zm14 0c3 0 7-1 7-8V5c0-1.25-.75-2-2-2h-4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2 0 4-1.5 6-3 8z"/>
+          </svg>
+
+          <div class="testimonial-track">
+            <!-- Slide 1 -->
+            <div class="testimonial-slide active">
+              <p class="testimonial-quote">"The Grand Velora does not attempt to impress you with loudness. It envelops you with warmth, the scent of crushed sandalwood, and an unspoken care that lingers long after you return home."</p>
+              <span class="testimonial-author">Eleanor & Julian Vance</span>
+              <span class="testimonial-location">London & Geneva</span>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <p class="testimonial-quote">"Swimming in The Azure Cistern at dusk with the stone oil lamps reflecting in the dark water is perhaps the most peaceful hour I have spent in any hotel in the world."</p>
+              <span class="testimonial-author">Dr. Arjun Mathur</span>
+              <span class="testimonial-location">New Delhi</span>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <p class="testimonial-quote">"Every corner of the residence feels carved by hands that truly understood proportions and light. The private dinner in the Mirrored Pavilion was pure poetry."</p>
+              <span class="testimonial-author">Claire De Fontaine</span>
+              <span class="testimonial-location">Paris</span>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="testimonial-controls">
+            <button class="testimonial-btn testimonial-prev" aria-label="Previous quote">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="testimonial-dots">
+              <button class="testimonial-dot active" aria-label="Go to quote 1"></button>
+              <button class="testimonial-dot" aria-label="Go to quote 2"></button>
+              <button class="testimonial-dot" aria-label="Go to quote 3"></button>
+            </div>
+            <button class="testimonial-btn testimonial-next" aria-label="Next quote">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FULL-WIDTH CALL-TO-ACTION BANNER -->
+    <section class="cta-banner-section" aria-label="Reserve Banner">
+      <img 
+        src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=2000&q=85" 
+        alt="Estate panoramic terrace overlooking hills at dusk" 
+        class="cta-banner-bg"
+        loading="lazy"
+        width="2000"
+        height="1000"
+      >
+      <div class="cta-banner-overlay"></div>
+      <div class="container cta-banner-content reveal-up">
+        <span class="eyebrow eyebrow-light">Your Sanctuary Awaits</span>
+        <h2 style="margin-bottom: 24px;">Begin Your Stay at The Grand Velora</h2>
+        <p style="color: var(--champagne); font-size: 1.1rem; margin-bottom: 36px; max-width: 580px; margin-left: auto; margin-right: auto;">
+          Reserve directly with our private concierge for exclusive benefits, personalized arrival service, and preferential suite allocation.
+        </p>
+        <a href="booking.html" class="btn btn-primary btn-magnetic">Reserve Your Residence</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 8. SITE FOOTER (Mandatory V-Tech link) -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col-brand">
+          <a href="index.html" class="site-logo">
+            <div class="logo-monogram-box">
+              <svg class="logo-v-svg" viewBox="0 0 32 32">
+                <path d="M7 8 L16 24 L25 8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="logo-text-group">
+              <span class="logo-title">The Grand Velora</span>
+              <span class="logo-subtitle">Palace & Sanctuary</span>
+            </div>
+          </a>
+          <p class="footer-blurb">
+            A sanctuary of quiet heritage, restorative stillness, and refined hospitality nestled in the amber foothills of Jaipur.
+          </p>
+          <span class="demo-disclaimer">Demo website &mdash; not a real hotel.</span>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="rooms.html" class="footer-link">Rooms & Suites</a></li>
+            <li><a href="amenities.html" class="footer-link">Amenities</a></li>
+            <li><a href="booking.html" class="footer-link">Booking Inquiry</a></li>
+            <li><a href="about.html" class="footer-link">Our Story</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact Details (Mandatory Placeholders) -->
+        <div>
+          <h4 class="footer-col-title">Concierge</h4>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:vaibhav.isti@gmail.com">vaibhav.isti@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:9555882573">+91 9555882573</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Velora Palace Road, Amber Foothills, Jaipur, Rajasthan 302001</span>
+          </div>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div>
+          <h4 class="footer-col-title">Private Journal</h4>
+          <p class="footer-newsletter-text">Receive occasional reflections on art, architecture, and private invitations to seasonal retreats.</p>
+          <form class="newsletter-form" aria-label="Subscribe to Private Journal">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email address for newsletter">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </form>
+          <div class="newsletter-feedback" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar with Mandatory V-Tech Link -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>
+          &copy; 2026 The Grand Velora. All rights reserved.
+        </div>
+        <div class="vtech-attribution">
+          <!-- Mandatory Agency Attribution Link -->
+          Designed &amp; developed by <a href="https://v-tech.example" target="_blank" rel="noopener" class="vtech-link">V-Tech</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts (Deferred / Modules) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  
+  <script src="js/images-config.js"></script>
+  <script src="js/transition.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

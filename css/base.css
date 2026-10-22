@@ -1,0 +1,383 @@
+/* ==========================================================================
+   THE GRAND VELORA — DESIGN SYSTEM: BASE & TOKENS
+   Crafted for luxury boutique hospitality & art-directed client demonstration.
+   ========================================================================== */
+
+:root {
+  /* --- Primary Color Palette --- */
+  --ink: #0E0B08;         /* Near-black warm base */
+  --charcoal: #1A1612;    /* Dark warm surface */
+  --umber: #2A2118;       /* Deep rich tone for borders, cards & elevation */
+  --gold: #C9A25B;        /* Signature imperial gold accent */
+  --gold-light: #E3C88F;  /* Highlight gold / border luster */
+  --champagne: #F1E6D0;   /* Secondary warm cream */
+  --ivory: #FAF6EE;       /* Pure warm off-white for crisp type */
+  --muted: #9A8F7E;       /* Subdued warm taupe for secondary copy & meta */
+
+  /* --- Translucent & Glass Tokens --- */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-bg-hover: rgba(255, 255, 255, 0.09);
+  --glass-border: rgba(227, 200, 143, 0.22);
+  --glass-border-focus: rgba(227, 200, 143, 0.6);
+  --glass-inner-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  --glass-blur: blur(18px) saturate(140%);
+  --glass-fallback: rgba(26, 22, 18, 0.94);
+
+  /* --- Typography Families --- */
+  --font-display: 'Cormorant Garamond', Garamond, 'Times New Roman', serif;
+  --font-accent: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* --- Scale & Spacing (8px Grid) --- */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --space-5xl: 140px;
+
+  /* --- Container & Layout --- */
+  --container-max: 1360px;
+  --container-padding: clamp(20px, 5vw, 64px);
+
+  /* --- Transitions & Motion --- */
+  --ease-luxury: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-smooth: cubic-bezier(0.25, 1, 0.5, 1);
+  --duration-fast: 0.25s;
+  --duration-normal: 0.5s;
+  --duration-slow: 0.9s;
+
+  /* --- Radii --- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-pill: 9999px;
+
+  /* --- Z-Indices --- */
+  --z-negative: -1;
+  --z-base: 1;
+  --z-header: 100;
+  --z-mobile-menu: 200;
+  --z-modal: 500;
+  --z-cursor: 9000;
+  --z-transition: 9999;
+}
+
+/* ==========================================================================
+   RESET & SYSTEM DEFAULTS
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: auto; /* Handled smoothly by Lenis */
+  background-color: var(--ink);
+  color: var(--ivory);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem; /* ~17px */
+  line-height: 1.7;
+  font-weight: 300;
+  color: rgba(250, 246, 238, 0.82);
+  background-color: var(--ink);
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Accessible Skip Link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 20px;
+  background: var(--gold);
+  color: var(--ink);
+  padding: 12px 24px;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  z-index: 10000;
+  border-radius: var(--radius-sm);
+  transition: top 0.2s ease;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 20px;
+  outline: 2px solid var(--champagne);
+}
+
+/* Focus styles for keyboard accessibility */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+/* Selection Color */
+::selection {
+  background-color: var(--gold);
+  color: var(--ink);
+}
+
+/* Media Elements */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+  background-color: var(--charcoal); /* Prevents layout jump & white flash */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-smooth);
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--ivory);
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 6.5vw, 5.5rem);
+  font-weight: 300;
+}
+
+h2 {
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+}
+
+h3 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+h4 {
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
+}
+
+.italic-serif {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.price-text {
+  font-family: var(--font-accent);
+  letter-spacing: 0.02em;
+}
+
+/* Eyebrows & Small Luxury Meta */
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.72rem; /* ~11.5px */
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--gold);
+  margin-bottom: 0.85rem;
+}
+
+.eyebrow-light {
+  color: var(--champagne);
+}
+
+.roman-numeral {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  color: var(--gold-light);
+  opacity: 0.75;
+}
+
+/* Subtle Hairline Dividers */
+.hairline-gold {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(201, 162, 91, 0) 0%, rgba(201, 162, 91, 0.4) 50%, rgba(201, 162, 91, 0) 100%);
+  border: none;
+  margin: var(--space-3xl) 0;
+}
+
+.hairline-subtle {
+  height: 1px;
+  background: rgba(227, 200, 143, 0.12);
+  border: none;
+}
+
+/* ==========================================================================
+   ATMOSPHERIC FILM GRAIN & SCROLL PROGRESS
+   ========================================================================== */
+
+/* Film Grain Overlay */
+.film-grain {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 900;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Scroll Progress Bar at the top of the viewport */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  z-index: 1000;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* ==========================================================================
+   CUSTOM LUXURY CURSOR (Desktop Only)
+   ========================================================================== */
+
+@media (pointer: fine) {
+  .custom-cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: var(--gold-light);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: var(--z-cursor);
+    transform: translate(-50%, -50%);
+    transition: opacity 0.25s ease, transform 0.15s ease-out;
+  }
+
+  .custom-cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(227, 200, 143, 0.45);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: var(--z-cursor);
+    transform: translate(-50%, -50%);
+    transition: width 0.3s var(--ease-luxury), height 0.3s var(--ease-luxury), border-color 0.3s ease, background-color 0.3s ease;
+  }
+
+  /* Hover state on interactive elements */
+  body.cursor-hover .custom-cursor-ring {
+    width: 64px;
+    height: 64px;
+    border-color: rgba(201, 162, 91, 0.85);
+    background-color: rgba(201, 162, 91, 0.08);
+  }
+
+  body.cursor-hover .custom-cursor-dot {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+}
+
+@media (pointer: coarse) {
+  .custom-cursor-dot,
+  .custom-cursor-ring {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   LAYOUT UTILITIES
+   ========================================================================== */
+
+.site-main {
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.section-spacing {
+  padding-top: clamp(80px, 11vw, 160px);
+  padding-bottom: clamp(80px, 11vw, 160px);
+}
+
+.section-spacing-top {
+  padding-top: clamp(80px, 11vw, 160px);
+}
+
+.section-spacing-bottom {
+  padding-bottom: clamp(80px, 11vw, 160px);
+}
+
+/* Screen reader utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Reduced Motion Safety */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

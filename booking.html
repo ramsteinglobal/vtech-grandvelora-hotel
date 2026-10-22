@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserve Your Stay — The Grand Velora</title>
+  <meta name="description" content="Inquire regarding reservations at The Grand Velora. Direct booking privileges include preferential suite upgrades and private chauffeur airport escort.">
+  <meta name="theme-color" content="#0E0B08">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Booking Inquiry — The Grand Velora">
+  <meta property="og:description" content="Begin your private reservation with our palace concierge.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230E0B08'/%3E%3Cpath d='M7 9 L16 24 L25 9' fill='none' stroke='%23C9A25B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" type="image/svg+xml">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/transition.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to reservation form</a>
+
+  <!-- Atmospheric Film Grain & Scroll Progress -->
+  <div class="film-grain" aria-hidden="true"></div>
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Shared Transition Overlay -->
+  <div id="page-transition-overlay" aria-hidden="true">
+    <div class="transition-brand">
+      <div class="transition-monogram-circle">
+        <svg class="transition-v-svg" viewBox="0 0 32 32" aria-hidden="true">
+          <path class="transition-svg-stroke" d="M7 8 L16 25 L25 8" />
+        </svg>
+      </div>
+      <div class="transition-brand-title">The Grand Velora</div>
+      <div class="transition-brand-subtitle">Reservations</div>
+      <div class="transition-line"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="site-logo" aria-label="The Grand Velora — Return to Home">
+        <div class="logo-monogram-box">
+          <svg class="logo-v-svg" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M7 8 L16 24 L25 8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">The Grand Velora</span>
+          <span class="logo-subtitle">Palace & Sanctuary</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="rooms.html" class="nav-link">Rooms</a>
+        <a href="amenities.html" class="nav-link">Amenities</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-primary btn-book-nav btn-magnetic active">Reserve</a>
+        <button class="menu-toggle" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-nav-overlay" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="rooms.html" class="mobile-nav-link">Rooms & Suites</a>
+      <a href="amenities.html" class="mobile-nav-link">Amenities</a>
+      <a href="booking.html" class="mobile-nav-link active">Booking Inquiry</a>
+      <a href="about.html" class="mobile-nav-link">Our Story</a>
+      <a href="contact.html" class="mobile-nav-link">Contact & Location</a>
+    </nav>
+    <div class="mobile-contact-bar">
+      <span>Reservations: <a href="tel:9555882573">+91 9555882573</a></span>
+      <span>Concierge: <a href="mailto:vaibhav.isti@gmail.com">vaibhav.isti@gmail.com</a></span>
+    </div>
+  </div>
+
+  <main id="main-content" class="site-main">
+    <!-- Page Hero Banner -->
+    <section class="page-hero" aria-label="Booking Header">
+      <img 
+        src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1920&q=85" 
+        alt="Atmospheric suite bedroom interior at twilight" 
+        class="page-hero-bg"
+        width="1920"
+        height="1080"
+      >
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content">
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-separator">&bull;</span>
+          <span>Reservations</span>
+        </nav>
+        <h1 class="page-hero-title">Booking Inquiry</h1>
+        <p style="color: var(--champagne); max-width: 580px; margin-top: 14px; font-size: 1.1rem; line-height: 1.7;">
+          Submit your stay dates and preferences. Our palace concierge personalizes every reservation.
+        </p>
+      </div>
+    </section>
+
+    <!-- Split Booking Form & Why Book Direct Panel -->
+    <section class="section-spacing" aria-label="Booking Inquiry Section">
+      <div class="container">
+        <div class="booking-layout-split">
+          
+          <!-- Glass Booking Form Container -->
+          <div class="glass-panel booking-form-card">
+            
+            <!-- Active Form Content -->
+            <div id="booking-fields-container">
+              <span class="eyebrow">Personalized Inquiry</span>
+              <h2 style="font-size: clamp(1.8rem, 3.2vw, 2.5rem); margin-bottom: 28px;">Your Stay Details</h2>
+
+              <form id="velora-booking-form" novalidate>
+                <div class="form-grid form-grid-2" style="margin-bottom: 20px;">
+                  
+                  <!-- Full Name -->
+                  <div class="form-group">
+                    <label for="booking-name" class="form-label">Full Name &amp; Title *</label>
+                    <input type="text" id="booking-name" class="form-input" placeholder="e.g. Lady Evelyn Montgomery" required>
+                    <span class="form-error"></span>
+                  </div>
+
+                  <!-- Email Address -->
+                  <div class="form-group">
+                    <label for="booking-email" class="form-label">Email Address *</label>
+                    <input type="email" id="booking-email" class="form-input" placeholder="name@domain.com" required>
+                    <span class="form-error"></span>
+                  </div>
+
+                  <!-- Phone Number -->
+                  <div class="form-group">
+                    <label for="booking-phone" class="form-label">Telephone / Mobile *</label>
+                    <input type="tel" id="booking-phone" class="form-input" placeholder="+91 9555882573" required>
+                    <span class="form-error"></span>
+                  </div>
+
+                  <!-- Room Selection -->
+                  <div class="form-group">
+                    <label for="booking-room" class="form-label">Preferred Residence</label>
+                    <select id="booking-room" class="form-select">
+                      <option value="deluxe-room">Deluxe Room (₹12,500 / night)</option>
+                      <option value="premier-room">Premier Room (₹16,000 / night)</option>
+                      <option value="velora-suite">Velora Suite (₹24,000 / night)</option>
+                      <option value="royal-suite">Royal Suite (₹38,000 / night)</option>
+                      <option value="presidential-suite">Presidential Suite (₹65,000 / night)</option>
+                    </select>
+                    <span class="form-error"></span>
+                  </div>
+
+                  <!-- Check-in Date -->
+                  <div class="form-group">
+                    <label for="booking-checkin" class="form-label">Arrival Date *</label>
+                    <input type="date" id="booking-checkin" class="form-input" required>
+                    <span class="form-error"></span>
+                  </div>
+
+                  <!-- Check-out Date -->
+                  <div class="form-group">
+                    <label for="booking-checkout" class="form-label">Departure Date *</label>
+                    <input type="date" id="booking-checkout" class="form-input" required>
+                    <span class="form-error"></span>
+                  </div>
+
+                  <!-- Adults Stepper -->
+                  <div class="form-group">
+                    <label class="form-label">Adults (Age 12+)</label>
+                    <div class="stepper-control">
+                      <button type="button" class="stepper-btn" id="btn-adults-minus" aria-label="Decrease adult guests">&minus;</button>
+                      <span class="stepper-val" id="stepper-adults-val">2</span>
+                      <button type="button" class="stepper-btn" id="btn-adults-plus" aria-label="Increase adult guests">&plus;</button>
+                    </div>
+                    <input type="hidden" id="booking-adults" value="2">
+                  </div>
+
+                  <!-- Children Stepper -->
+                  <div class="form-group">
+                    <label class="form-label">Children (Under 12)</label>
+                    <div class="stepper-control">
+                      <button type="button" class="stepper-btn" id="btn-children-minus" aria-label="Decrease child guests">&minus;</button>
+                      <span class="stepper-val" id="stepper-children-val">0</span>
+                      <button type="button" class="stepper-btn" id="btn-children-plus" aria-label="Increase child guests">&plus;</button>
+                    </div>
+                    <input type="hidden" id="booking-children" value="0">
+                  </div>
+
+                </div>
+
+                <!-- Special Requests -->
+                <div class="form-group" style="margin-bottom: 32px;">
+                  <label for="booking-requests" class="form-label">Dietary Preferences or Special Requests</label>
+                  <textarea id="booking-requests" class="form-textarea" placeholder="Ayurvedic dietary preferences, airport arrival time, pillow preferences, or celebratory arrangements..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-magnetic" style="width: 100%; padding: 18px;">
+                  Transmit Booking Inquiry
+                </button>
+                <p style="font-size: 0.75rem; color: var(--muted); text-align: center; margin-top: 14px;">
+                  No payment charged now. Our palace reservations team verifies availability and confirms within 4 hours.
+                </p>
+              </form>
+            </div>
+
+            <!-- Elegant Animated Success Box -->
+            <div id="booking-success-box" class="booking-success-box" role="status" aria-live="polite">
+              <svg class="success-check-svg" viewBox="0 0 52 52" aria-hidden="true">
+                <circle class="success-check-circle" cx="26" cy="26" r="24" fill="none" stroke-width="2"/>
+                <path class="success-check-path" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M14 27l8 8 16-16"/>
+              </svg>
+              
+              <span class="eyebrow">Inquiry Received</span>
+              <h3 style="font-size: 2.2rem; margin-bottom: 16px;">We Await Your Arrival</h3>
+              <p style="color: var(--champagne); max-width: 520px; margin: 0 auto 24px; line-height: 1.7;">
+                Your reservation request has been dispatched to our Head Concierge.
+              </p>
+
+              <div id="success-summary-details" class="glass-panel" style="max-width: 480px; margin: 0 auto 32px; padding: 24px; text-align: left; font-size: 0.9rem; line-height: 1.8;">
+                <!-- Populated dynamically via js/booking.js -->
+              </div>
+
+              <button type="button" id="booking-reset-btn" class="btn btn-ghost">
+                Submit Another Inquiry
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Side Panel: Why Book Direct & Concierge -->
+          <aside class="glass-panel booking-perks-card" aria-label="Direct Booking Benefits">
+            <span class="eyebrow">Direct Privileges</span>
+            <h3 style="font-size: 1.6rem; margin-bottom: 24px;">The Grand Velora Guarantee</h3>
+            
+            <!-- Perk 1 -->
+            <div class="perk-item">
+              <svg class="perk-check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              <div>
+                <h4 class="perk-title">Preferential Suite Allocation</h4>
+                <p class="perk-desc">Complimentary tier upgrade upon arrival, subject to sanctuary availability.</p>
+              </div>
+            </div>
+
+            <!-- Perk 2 -->
+            <div class="perk-item">
+              <svg class="perk-check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              <div>
+                <h4 class="perk-title">Complimentary Chauffeur Escort</h4>
+                <p class="perk-desc">Private limousine transfer to and from Jaipur International Airport for all suites.</p>
+              </div>
+            </div>
+
+            <!-- Perk 3 -->
+            <div class="perk-item">
+              <svg class="perk-check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              <div>
+                <h4 class="perk-title">Flexible 48-Hour Cancellation</h4>
+                <p class="perk-desc">Peace of mind with full deposit refund up to two days prior to arrival date.</p>
+              </div>
+            </div>
+
+            <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(227, 200, 143, 0.15);">
+              <span class="eyebrow" style="font-size: 0.68rem;">Immediate Assistance</span>
+              <p style="font-size: 0.88rem; color: var(--muted); margin-bottom: 12px;">
+                For urgent reservations or same-day arrival arrangements, call our private desk directly:
+              </p>
+              <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.95rem;">
+                <a href="tel:9555882573" style="color: var(--gold-light); font-weight: 500;">
+                  +91 9555882573
+                </a>
+                <a href="mailto:vaibhav.isti@gmail.com" style="color: var(--champagne);">
+                  vaibhav.isti@gmail.com
+                </a>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer (Mandatory V-Tech link) -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <a href="index.html" class="site-logo">
+            <div class="logo-monogram-box">
+              <svg class="logo-v-svg" viewBox="0 0 32 32">
+                <path d="M7 8 L16 24 L25 8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="logo-text-group">
+              <span class="logo-title">The Grand Velora</span>
+              <span class="logo-subtitle">Palace & Sanctuary</span>
+            </div>
+          </a>
+          <p class="footer-blurb">
+            A sanctuary of quiet heritage, restorative stillness, and refined hospitality nestled in the amber foothills of Jaipur.
+          </p>
+          <span class="demo-disclaimer">Demo website &mdash; not a real hotel.</span>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="rooms.html" class="footer-link">Rooms & Suites</a></li>
+            <li><a href="amenities.html" class="footer-link">Amenities</a></li>
+            <li><a href="booking.html" class="footer-link">Booking Inquiry</a></li>
+            <li><a href="about.html" class="footer-link">Our Story</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Concierge</h4>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:vaibhav.isti@gmail.com">vaibhav.isti@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:9555882573">+91 9555882573</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Velora Palace Road, Amber Foothills, Jaipur, Rajasthan 302001</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Private Journal</h4>
+          <p class="footer-newsletter-text">Receive occasional reflections on art, architecture, and private invitations to seasonal retreats.</p>
+          <form class="newsletter-form" aria-label="Subscribe to Private Journal">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email address for newsletter">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </form>
+          <div class="newsletter-feedback" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>&copy; 2026 The Grand Velora. All rights reserved.</div>
+        <div class="vtech-attribution">
+          Designed &amp; developed by <a href="https://v-tech.example" target="_blank" rel="noopener" class="vtech-link">V-Tech</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  
+  <script src="js/images-config.js"></script>
+  <script src="js/transition.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/booking.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* ==========================================================================
+   THE GRAND VELORA — PAGE TRANSITION & BRAND LOADER
+   Shared full-screen transition overlay with SVG stroke drawing
+   ========================================================================== */
+
+#page-transition-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--ink);
+  z-index: var(--z-transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s cubic-bezier(0.25, 1, 0.5, 1), visibility 0.25s;
+}
+
+/* When active during an exit transition */
+#page-transition-overlay.is-exiting {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* When revealing content on entering a page (lifting away) */
+#page-transition-overlay.is-entering {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+#page-transition-overlay.is-revealed {
+  transform: translateY(-100%);
+  transition: transform 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+  pointer-events: none;
+}
+
+/* Center Monogram & Brand Container */
+.transition-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.transition-monogram-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 162, 91, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  background: radial-gradient(circle, rgba(201, 162, 91, 0.12) 0%, transparent 70%);
+}
+
+.transition-v-svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Animated SVG Stroke Drawing */
+.transition-svg-stroke {
+  stroke: var(--gold-light);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: drawStroke 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+@keyframes drawStroke {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.transition-brand-title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  letter-spacing: 0.08em;
+  font-weight: 300;
+  color: var(--ivory);
+  margin-bottom: 6px;
+}
+
+.transition-brand-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+
+/* Animated Hairline Below Title */
+.transition-line {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  transform: scaleX(0);
+  transform-origin: center;
+  animation: lineExpand 1s cubic-bezier(0.19, 1, 0.22, 1) forwards 0.2s;
+}
+
+@keyframes lineExpand {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+/* Prefers Reduced Motion: immediate simple fade without slide or stroke delay */
+@media (prefers-reduced-motion: reduce) {
+  #page-transition-overlay.is-revealed {
+    transform: none !important;
+    opacity: 0 !important;
+    transition: opacity 0.2s ease !important;
+  }
+  .transition-svg-stroke {
+    stroke-dashoffset: 0 !important;
+    animation: none !important;
+  }
+  .transition-line {
+    transform: scaleX(1) !important;
+    animation: none !important;
+  }
+}
